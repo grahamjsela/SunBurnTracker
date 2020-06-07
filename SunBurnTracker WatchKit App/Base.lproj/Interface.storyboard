@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SunBurnTracker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.14999999999999999" alignment="left" layout="vertical" id="m0F-lc-v9a">
+                            <items>
+                                <timer alignment="left" previewedSeconds="0" id="s7p-Q7-iBZ"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="U8w-He-K5P">
+                            <items>
+                                <button width="0.27500000000000002" height="0.25" alignment="center" verticalAlignment="center" title="-" id="9E5-OS-7SK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="44"/>
+                                    <connections>
+                                        <action selector="uvDecreased" destination="AgC-eL-Hgc" id="Dqm-uY-tsH"/>
+                                    </connections>
+                                </button>
+                                <label width="0.45000000000000001" alignment="center" verticalAlignment="center" text="UVIndex:" textAlignment="center" id="cld-jV-4mV">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                </label>
+                                <button width="0.27500000000000002" height="1" alignment="center" verticalAlignment="center" title="+" id="hKL-L6-Ki8">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="44"/>
+                                    <connections>
+                                        <action selector="uvIncreased" destination="AgC-eL-Hgc" id="Z7x-7a-TaQ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group height="0.29999999999999999" alignment="left" id="qId-Vx-2tQ">
+                            <items>
+                                <button width="0.27500000000000002" height="0.29999999999999999" alignment="center" verticalAlignment="center" title="-" id="FQ3-0v-hB1">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="44"/>
+                                    <connections>
+                                        <action selector="skinToneDecreased" destination="AgC-eL-Hgc" id="5f2-Vp-IWE"/>
+                                    </connections>
+                                </button>
+                                <label width="0.45000000000000001" height="1" alignment="center" verticalAlignment="center" text="Skin Tone: " textAlignment="center" numberOfLines="2" id="t9P-Rk-Qb0">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                </label>
+                                <button width="0.27500000000000002" height="1" alignment="center" title="+" id="5to-au-Pkm">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="44"/>
+                                    <connections>
+                                        <action selector="skinToneIncreased" destination="AgC-eL-Hgc" id="mX2-RT-RlS"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group height="0.29999999999999999" alignment="left" id="IDZ-tB-5BY">
+                            <items>
+                                <button width="1" alignment="left" title="Update Timer" id="wEi-4H-xCt">
+                                    <connections>
+                                        <action selector="updateTimer" destination="AgC-eL-Hgc" id="hbn-4C-R3o"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="skinToneDecrease" destination="FQ3-0v-hB1" id="KcU-UL-VKM"/>
+                        <outlet property="skinToneIncrease" destination="5to-au-Pkm" id="x9j-fD-mQc"/>
+                        <outlet property="skinToneLabel" destination="t9P-Rk-Qb0" id="bYz-Ly-fd4"/>
+                        <outlet property="sunBurnCountdown" destination="s7p-Q7-iBZ" id="qpM-Oo-wGc"/>
+                        <outlet property="uVIndexLabel" destination="cld-jV-4mV" id="bvY-lj-mn8"/>
+                        <outlet property="updateTimerButton" destination="wEi-4H-xCt" id="EZK-UR-lSv"/>
+                        <outlet property="uvDecrease" destination="9E5-OS-7SK" id="5aU-gc-ETN"/>
+                        <outlet property="uvIncrease" destination="hKL-L6-Ki8" id="p0o-uV-PDA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SunBurnTracker_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="SunBurnTracker_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
