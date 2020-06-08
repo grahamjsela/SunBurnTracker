@@ -6,32 +6,33 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Untitled design-3-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SunBurnTracker_WatchKit_App" customModuleProvider="target">
+                <controller backgroundImage="Untitled design-3" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SunBurnTracker_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="0.14999999999999999" alignment="left" layout="vertical" id="m0F-lc-v9a">
                             <items>
-                                <timer alignment="left" previewedSeconds="0" id="s7p-Q7-iBZ"/>
+                                <timer alignment="left" previewedSeconds="0" id="s7p-Q7-iBZ">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </timer>
                             </items>
                         </group>
                         <group width="1" height="0.29999999999999999" alignment="left" id="U8w-He-K5P">
                             <items>
                                 <button width="0.27500000000000002" height="0.25" alignment="center" verticalAlignment="center" title="-" id="9E5-OS-7SK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="44"/>
                                     <connections>
                                         <action selector="uvDecreased" destination="AgC-eL-Hgc" id="Dqm-uY-tsH"/>
                                     </connections>
                                 </button>
                                 <label width="0.45000000000000001" alignment="center" verticalAlignment="center" text="UVIndex:" textAlignment="center" id="cld-jV-4mV">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="9"/>
                                 </label>
                                 <button width="0.27500000000000002" height="1" alignment="center" verticalAlignment="center" title="+" id="hKL-L6-Ki8">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="44"/>
                                     <connections>
                                         <action selector="uvIncreased" destination="AgC-eL-Hgc" id="Z7x-7a-TaQ"/>
@@ -42,17 +43,18 @@
                         <group height="0.29999999999999999" alignment="left" id="qId-Vx-2tQ">
                             <items>
                                 <button width="0.27500000000000002" height="0.29999999999999999" alignment="center" verticalAlignment="center" title="-" id="FQ3-0v-hB1">
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="44"/>
                                     <connections>
                                         <action selector="skinToneDecreased" destination="AgC-eL-Hgc" id="5f2-Vp-IWE"/>
                                     </connections>
                                 </button>
                                 <label width="0.45000000000000001" height="1" alignment="center" verticalAlignment="center" text="Skin Tone: " textAlignment="center" numberOfLines="2" id="t9P-Rk-Qb0">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="9"/>
                                 </label>
                                 <button width="0.27500000000000002" height="1" alignment="center" title="+" id="5to-au-Pkm">
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="44"/>
                                     <connections>
                                         <action selector="skinToneIncreased" destination="AgC-eL-Hgc" id="mX2-RT-RlS"/>
@@ -63,6 +65,7 @@
                         <group height="0.29999999999999999" alignment="left" id="IDZ-tB-5BY">
                             <items>
                                 <button width="1" alignment="left" title="Update Timer" id="wEi-4H-xCt">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="updateTimer" destination="AgC-eL-Hgc" id="hbn-4C-R3o"/>
                                     </connections>
@@ -116,4 +119,7 @@
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Untitled design-3" width="500" height="500"/>
+    </resources>
 </document>
